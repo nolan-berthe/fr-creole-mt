@@ -1,0 +1,1 @@
+{"seq_len": 12, "embedding_dim": 128, "units": 256, "src_vocab_size": 160, "tgt_vocab_size": 127}

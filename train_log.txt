@@ -1,0 +1,51 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794193316.717853   30696 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794193319.413421   30696 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1794193321.959504   30696 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Train pairs: 468  Val pairs: 52
+
+[1m1/8[0m [32m==[0m[37m==================[0m [1m0s[0m 35ms/step
+[1m8/8[0m [32m====================[0m[37m[0m [1m0s[0m 2ms/step 
+
+[1m8/8[0m [32m====================[0m[37m[0m [1m0s[0m 2ms/step
+
+[1m1/8[0m [32m==[0m[37m==================[0m [1m0s[0m 8ms/step
+[1m8/8[0m [32m====================[0m[37m[0m [1m0s[0m 2ms/step
+
+[1m8/8[0m [32m====================[0m[37m[0m [1m0s[0m 2ms/step
+C:\Users\nolan\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\keras\src\layers\layer.py:1095: UserWarning: Layer 'forward_gru' (of type GRU) was passed an input with a mask attached to it. However, this layer does not support masking and will therefore destroy the mask information. Downstream layers will not see the mask.
+  warnings.warn(
+C:\Users\nolan\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\keras\src\layers\layer.py:1095: UserWarning: Layer 'backward_gru' (of type GRU) was passed an input with a mask attached to it. However, this layer does not support masking and will therefore destroy the mask information. Downstream layers will not see the mask.
+  warnings.warn(
+C:\Users\nolan\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\keras\src\layers\layer.py:1095: UserWarning: Layer 'bidirectional' (of type Bidirectional) was passed an input with a mask attached to it. However, this layer does not support masking and will therefore destroy the mask information. Downstream layers will not see the mask.
+  warnings.warn(
+E0000 00:00:1794193322.520125   30696 util.cc:131] oneDNN supports DT_BOOL only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+Source vocab: 160  Target vocab: 127
+Epoch   1/120  train_loss=2.6971 train_acc=0.244  val_loss=1.9462 val_acc=0.221  (10.5s)
+Epoch   5/120  train_loss=1.2994 train_acc=0.414  val_loss=1.0149 val_acc=0.372  (9.5s)
+Epoch  10/120  train_loss=0.5471 train_acc=0.557  val_loss=0.5208 val_acc=0.464  (7.9s)
+Epoch  15/120  train_loss=0.1545 train_acc=0.646  val_loss=0.1966 val_acc=0.543  (8.3s)
+Epoch  20/120  train_loss=0.0355 train_acc=0.691  val_loss=0.0634 val_acc=0.581  (8.0s)
+Epoch  25/120  train_loss=0.0132 train_acc=0.673  val_loss=0.0334 val_acc=0.587  (8.6s)
+Epoch  30/120  train_loss=0.0069 train_acc=0.691  val_loss=0.0226 val_acc=0.588  (8.2s)
+Epoch  35/120  train_loss=0.0046 train_acc=0.691  val_loss=0.0173 val_acc=0.588  (8.9s)
+Epoch  40/120  train_loss=0.0034 train_acc=0.697  val_loss=0.0146 val_acc=0.588  (8.4s)
+Epoch  45/120  train_loss=0.0025 train_acc=0.679  val_loss=0.0127 val_acc=0.588  (8.3s)
+Epoch  50/120  train_loss=0.0020 train_acc=0.691  val_loss=0.0116 val_acc=0.588  (8.3s)
+Epoch  55/120  train_loss=0.0016 train_acc=0.685  val_loss=0.0105 val_acc=0.588  (8.0s)
+Epoch  60/120  train_loss=0.0014 train_acc=0.691  val_loss=0.0097 val_acc=0.589  (8.5s)
+Epoch  65/120  train_loss=0.0012 train_acc=0.673  val_loss=0.0090 val_acc=0.589  (7.9s)
+Epoch  70/120  train_loss=0.0010 train_acc=0.685  val_loss=0.0084 val_acc=0.589  (9.0s)
+Epoch  75/120  train_loss=0.0009 train_acc=0.685  val_loss=0.0079 val_acc=0.589  (8.5s)
+Epoch  80/120  train_loss=0.0008 train_acc=0.685  val_loss=0.0076 val_acc=0.589  (8.7s)
+Epoch  85/120  train_loss=0.0007 train_acc=0.697  val_loss=0.0072 val_acc=0.589  (9.3s)
+Epoch  90/120  train_loss=0.0006 train_acc=0.697  val_loss=0.0069 val_acc=0.589  (9.4s)
+Epoch  95/120  train_loss=0.0005 train_acc=0.703  val_loss=0.0068 val_acc=0.589  (9.4s)
+Epoch 100/120  train_loss=0.0005 train_acc=0.697  val_loss=0.0065 val_acc=0.589  (9.1s)
+Epoch 105/120  train_loss=0.0004 train_acc=0.679  val_loss=0.0064 val_acc=0.589  (9.5s)
+Epoch 110/120  train_loss=0.0004 train_acc=0.673  val_loss=0.0063 val_acc=0.589  (8.1s)
+Epoch 115/120  train_loss=0.0004 train_acc=0.685  val_loss=0.0062 val_acc=0.589  (9.3s)
+Epoch 120/120  train_loss=0.0003 train_acc=0.691  val_loss=0.0060 val_acc=0.589  (9.5s)
+Done. Best val_loss=0.0060. Artifacts saved to artifacts/

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Traducteur Français → Créole Guyanais</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Français → Créole Guyanais</h1>
+      <p class="subtitle">Traducteur expérimental (TensorFlow, GRU + attention)</p>
+    </header>
+
+    <main class="card">
+      <label for="input-text">Phrase en français</label>
+      <textarea id="input-text" rows="3" placeholder="Écris une phrase en français…" maxlength="300"></textarea>
+
+      <div class="actions">
+        <button id="translate-btn">Traduire</button>
+        <span id="status" class="status"></span>
+      </div>
+
+      <div class="result-block">
+        <label>Créole guyanais</label>
+        <div id="result" class="result">—</div>
+      </div>
+
+      <div class="examples">
+        <span class="examples-label">Essaie :</span>
+        <div class="chips" id="chips"></div>
+      </div>
+    </main>
+
+    <p class="note">
+      Modèle entraîné sur ~520 phrases types (formules de phrasebook).
+      Il traduira bien ces phrases et leurs variantes, mais ne généralisera
+      pas à n'importe quelle phrase française.
+    </p>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
